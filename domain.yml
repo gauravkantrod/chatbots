@@ -1,0 +1,59 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - user_requirement
+  - food_type_veg
+  - food_type_non_veg
+  - veg_order
+  - non_veg_order
+  - beer_order
+
+responses:
+  utter_greet:
+  - text: "Hey I am a chatbot. My name is Jazz! I am your virtual waiter. How can I help you?"
+
+  utter_veg_non_veg:
+  - text: "What would you like to have? Veg or Non-veg or drinks."
+
+  utter_veg:
+  - text: "In veg we have paneer, mushroom, mix veg"
+
+  utter_non_veg:
+  - text: "In non-veg we have chicken, mutton and fish."
+
+  utter_soft_drinks:
+  - text: "In soft drinks we have pepsi, cola, frouti."
+
+  utter_beer:
+  - text: "In beer we have Kingfisher, Hoegarden, Stella, Knockout."
+
+  utter_anythingelse:
+  - text: "Ok. Order Accepted. Is there anything else I can do for you?"
+
+  utter_ending_message:
+  - text: "Thank you for your time. Bye"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
