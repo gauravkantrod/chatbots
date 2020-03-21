@@ -1,59 +1,69 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - user_requirement
-  - food_type_veg
-  - food_type_non_veg
-  - veg_order
-  - non_veg_order
-  - beer_order
-
+- greet
+- goodbye
+- affirm
+- deny
+- user_requirement
+- alcohol_requirement
+- food_type_veg
+- food_type_non_veg
+- veg_order
+- non_veg_order
+- soft_drinks
+- beer_order
+- liquors
+- simple_breads
+- stuffed_breads
+- toppings
+- extras
+- timing
 responses:
   utter_greet:
-  - text: "Hey I am a chatbot. My name is Jazz! I am your virtual waiter. How can I help you?"
-
+  - text: Hey!! I am a chatbot. My name is Jazz! I am your virtual waiter. How can I
+      help you?
   utter_veg_non_veg:
-  - text: "What would you like to have? Veg or Non-veg or drinks."
-
+  - text: What would you like to have? Veg or Non-veg or drinks.
   utter_veg:
-  - text: "In veg we have paneer, mushroom, mix veg"
-
+  - text: In veg we have paneer, mushroom, mix veg
   utter_non_veg:
-  - text: "In non-veg we have chicken, mutton and fish."
-
+  - text: In non-veg we have chicken, mutton and fish.
   utter_soft_drinks:
-  - text: "In soft drinks we have pepsi, cola, frouti."
-
+  - text: In soft drinks we have pepsi, cola, frouti.
   utter_beer:
-  - text: "In beer we have Kingfisher, Hoegarden, Stella, Knockout."
-
+  - text:
+      Kingfisher
+      Hoegaarden
+      Stella
+      Heineken
+      Kalyani
+  utter_alcohols:
+  - text: At present we serve Kingfisher Ultra only.
   utter_anythingelse:
-  - text: "Ok. Order Accepted. Is there anything else I can do for you?"
-
+  - text: Ok. Order Accepted. Is there anything else I can do for you?
+  utter_timings:
+  - text: We are open from 10 AM to 10 PM.
+  utter_yes:
+  - text: Yes
+  utter_no:
+  - text: No
   utter_ending_message:
-  - text: "Thank you for your time. Bye"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Thank you for your time. Bye
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: Bye
+actions:
+- utter_greet
+- utter_veg_non_veg
+- utter_veg
+- utter_non_veg
+- utter_soft_drinks
+- utter_beer
+- utter_alcohols
+- utter_anythingelse
+- utter_timings
+- utter_yes
+- utter_no
+- utter_ending_message
+- utter_goodbye

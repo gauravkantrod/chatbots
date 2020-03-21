@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Beer Shop</title>
+  <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <script>localStorage.removeItem("chat_session")</script>
+  <div id="webchat">
+    <script>
+      WebChat.default.init({
+        selector: "#webchat",
+        customData: { "language": "en" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+        socketUrl: "http://localhost:5005",
+        socketPath: "/socket.io/",
+        title: "Beer Shop",
+        subtitle: "Grab a beer",
+        hideWhenNotConnected: true,
+        showMessageDate: true,
+        storage: "local"
+      })
+    </script>
+</body>
+
+</html>

@@ -9,7 +9,17 @@
 - What can I have for dinner?
 - What can I have in snacks?
 - What is the place famous for?
-- anything to eat?
+- Anything to eat?
+
+## intent:alcohol_requirement
+- Anything to drink?
+- What kind of alcohol drinks you serve?
+- can i get a beer ?
+- can i get hard drinks now?
+- do u serve beer?
+- Which all beers do you serve?
+- Which beers can I get now?
+- Which ones?
 
 ## intent:food_type_veg
 - veg
@@ -20,9 +30,6 @@
 - I would like to have veg food
 - I would like to have pure veg food
 - I would like to have veggies
-
-## intent:taste
-- 
 
 ## intent:food_type_non_veg
 - non-vegetarian
@@ -60,6 +67,7 @@
 - appy
 
 ## intent:beer_order
+- Can I get b
 - Kingfisher Strong
 - Kingfisher Premium
 - Kingfisher Ultra
@@ -85,13 +93,56 @@
 - Godfather
 - Simba
 
-## intent:breads
+## intent:liquors
+- Old monk
+- Blenders Pride
+- Officers Choice
+- Imperial Blue
+- Herculese rum
+- McDowells rum
+- McDowells Whiskey
+- Jack Daneials
+- Chivas Regal
+
+## intent:simple_breads
 - roti
 - butter roti
 - chapati
+- kulcha
+- Galric naan
+- Plain naan
+- butter naan
+
+## intent:stuffed_breads
+- Aloo Parantha
+- Plain Parantha
+- Gobi Parantha
+- Mix veg Parantha
+- mix-veg Parantha
+- Paneer Parantha
+- sattu Parantha
+- methi Parantha
+- Garlic Parantha
+- cheese garlic Parantha
+
+## intent:toppings
+- butter
+- cheese
+- ghee
+- olives
+
+## intent:extras
+- green chutney
+- red chutney
+- mayonese
+- Tomato sauce
+- chienese chutney
 
 ## intent:timing
+- Hey are you open ?
 - Is your resturant open?
+- till what time can I order food?
+- What's the timing of your restaurant?
 
 ## intent:greet
 - hey
@@ -125,31 +176,3 @@
 - don't like that
 - no way
 - not really
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
